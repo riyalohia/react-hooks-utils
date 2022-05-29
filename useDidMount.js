@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import useTimeout from './useTimeout';
 
-const useMount = () => {
+const useDidMount = () => {
   const [isMounted, setIsMounted] = useState(false);
   useTimeout(() => {
     setIsMounted(true);
@@ -9,4 +9,4 @@ const useMount = () => {
   return isMounted;
 };
 
-export default useMount;
+export default useDidMount;
